@@ -12,12 +12,12 @@ int main() {
   printf("My favorite letter is %c\n", letter);
 
   // Automatic type conversion
-  float quotient_auto = x / y;
-  printf("The quotient of %d divided by %d is %f (with automatic type conversion)\n", x, y, quotient_auto);
+  float quotient = x / y;
+  printf("The quotient of %d divided by %d is %f\n", x, y, quotient);
 
   // Explicit type conversion
-  float quotient = (float) x / y;
-  printf("The quotient of %d divided by %d is %f (with exlicit type conversion)\n", x, y, quotient);
+  quotient = (float) x / y;
+  printf("The quotient of %d divided by %d is %f\n", x, y, quotient);
 
   return 0;
 }
