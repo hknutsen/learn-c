@@ -13,11 +13,13 @@ int main() {
 
   // Automatic type conversion
   float quotient = x / y;
-  printf("The quotient of %d divided by %d is %f\n", x, y, quotient);
+  int check = x / quotient == y;
+  printf("The quotient of %d divided by %d is %f (verification: %d)\n", x, y, quotient, check);
 
   // Explicit type conversion
   quotient = (float) x / y;
-  printf("The quotient of %d divided by %d is %f\n", x, y, quotient);
+  check = x / quotient == y;
+  printf("The quotient of %d divided by %d is %f (verification: %d)\n", x, y, quotient, check);
 
   return 0;
 }
